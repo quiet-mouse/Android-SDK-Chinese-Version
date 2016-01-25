@@ -1,4 +1,4 @@
-### Android-SDK-Chinese-Version
+## Android-SDK-Chinese-Version
 Android 中文帮助文档
 
 ##规范
