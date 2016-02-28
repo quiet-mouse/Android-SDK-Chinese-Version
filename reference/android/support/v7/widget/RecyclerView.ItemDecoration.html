@@ -2067,9 +2067,9 @@ type="text/css">
 					<div class="jd-descr">
 						<h2>Class Overview</h2>
 						<p itemprop="articleBody"> 一个itemDecoration允许应用程序添加一个特殊的图形和布局偏移到来自适配器的数据集的具体项目。这对绘画项目之间的dividers是有用的，高亮，可视化分组边界等。 </br>
-							(An ItemDecoration allows the application to add a special drawing and layout offset
+							<code>An ItemDecoration allows the application to add a special drawing and layout offset
 							to specific item views from the adapter's data set. This can be useful for drawing dividers
-							between items, highlights, visual grouping boundaries and more.)
+							between items, highlights, visual grouping boundaries and more.</code>
 						<p>All ItemDecorations are drawn in the order they were added, before the item
 							views (in <code>
 							<a href="../../../../../reference/android/support/v7/widget/RecyclerView.ItemDecoration.html#onDraw(android.graphics.Canvas, android.support.v7.widget.RecyclerView, android.support.v7.widget.RecyclerView.State)">
@@ -2553,9 +2553,10 @@ type="text/css">
 						</div>
 						<div class="jd-details-descr">
 							<div class="jd-tagdata jd-tagdescr">
-								<p>Retrieve any offsets for the given item. Each field of <code>outRect</code> specifies
+								<p>检索给定项目的任何偏移量。对<code>outRect</code>每个字段指定的项目视图应该插入的像素数量，类似于填充(padding)或边缘(marging)。默认的实现套outrect 0和返回的界限。</br>
+								<code>Retrieve any offsets for the given item. Each field of <code>outRect</code> specifies
 									the number of pixels that the item view should be inset by, similar to padding or margin.
-									The default implementation sets the bounds of outRect to 0 and returns.
+									The default implementation sets the bounds of outRect to 0 and returns.</code>	
 								<p> If this ItemDecoration does not affect the positioning of item views, it should set
 									all four fields of <code>outRect</code> (left, top, right, bottom) to zero
 									before returning.
@@ -2577,7 +2578,8 @@ type="text/css">
 									<tr>
 										<th>view
 											</td>
-										<td>The child view to decorate</td>
+										<td>要被装饰的子视图</br>
+											<code>The child view to decorate</code></td>
 									</tr>
 									<tr>
 										<th>parent
@@ -2587,7 +2589,8 @@ type="text/css">
 									<tr>
 										<th>state
 											</td>
-										<td>The current state of RecyclerView. </td>
+										<td>RecyclerView当前的状态</br>
+											<code>The current state of RecyclerView.</code></td>
 									</tr>
 								</table>
 							</div>
